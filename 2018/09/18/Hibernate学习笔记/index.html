@@ -16,7 +16,7 @@
 <meta property="og:site_name" content="Nozomi&#39;s blog">
 <meta property="og:description" content="Hibernate持久化类的主要规则，然而，在这些规则中，没有一条是硬性要求 所有将被持久化的 Java 类都需要一个默认的构造函数。 为了使对象能够在 Hibernate 和数据库中容易识别，所有类都需要包含一个 ID。此属性映射到数据库表的主键列。所有将被持久化的属性都应该声明为 private，并具有由 JavaBean 风格定义的 getXXX 和 setXXX 方法。 Hibernate">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2018-09-30T11:41:21.630Z">
+<meta property="og:updated_time" content="2018-10-09T09:22:17.342Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Hibernate学习笔记">
 <meta name="twitter:description" content="Hibernate持久化类的主要规则，然而，在这些规则中，没有一条是硬性要求 所有将被持久化的 Java 类都需要一个默认的构造函数。 为了使对象能够在 Hibernate 和数据库中容易识别，所有类都需要包含一个 ID。此属性映射到数据库表的主键列。所有将被持久化的属性都应该声明为 private，并具有由 JavaBean 风格定义的 getXXX 和 setXXX 方法。 Hibernate">
@@ -176,7 +176,8 @@
 <p>为了使对象能够在 Hibernate 和数据库中容易识别，所有类都需要包含一个 ID。此属性映射到数据库表的主键列。<br>所有将被持久化的属性都应该声明为 private，并具有由 JavaBean 风格定义的 getXXX 和 setXXX 方法。</p>
 <p>Hibernate 的一个重要特征为代理，它取决于该持久化类是处于非 final 的，还是处于一个所有方法都声明为 public 的接口。</p>
 <p>所有的类是不可扩展或按 EJB 要求实现的一些特殊的类和接口。</p>
-<p>Hibernate属性:<br>1,hibernate.dialect  这个属性使 Hibernate 应用为被选择的数据库生成适当的 SQL。<br>2,hibernate.connection<br>    1).hibernate.connection.driver_class JDBC 驱动程序类。<br>    2).hibernate.connection.url 数据库实例的 JDBC URL。<br>    3).hibernate.connection.pool_size 限制在 Hibernate 应用数据库连接池中连接的数量<br>    4).    hibernate.connection.autocommit 允许在 JDBC 连接中使用自动提交模式。</p>
+<p>Hibernate属性:<br>1,hibernate.dialect  这个属性使 Hibernate 应用为被选择的数据库生成适当的 SQL。<br>2,hibernate.connection<br>    1).hibernate.connection.driver_class JDBC 驱动程序类。<br>    2).hibernate.connection.url 数据库实例的 JDBC URL。<br>    3).hibernate.connection.pool_size 限制在 Hibernate 应用数据库连接池中连接的数量<br>    4).hibernate.connection.autocommit 允许在 JDBC 连接中使用自动提交模式。</p>
+<p>Hibernate 查询语言<br>      Hibernate 查询语言（HQL）是一种面向对象的查询语言，类似于 SQL，但不是去对表和列进行操作，而是面向对象和它们的属性。<br>    HQL 查询被 Hibernate 翻译为传统的 SQL 查询从而对数据库进行操作。<br>      尽管你能直接使用本地 SQL 语句，但我还是建议你尽可能的使用 HQL 语句，以避免数据库关于可移植性的麻烦，并且体现了 Hibernate 的 SQL 生成和缓存策略。<br>    在 HQL 中一些关键字比如 SELECT ，FROM 和 WHERE 等，是不区分大小写的，但是一些属性比如表名和列名是区分大小写的。<br> *可以使用cerateSQLQuery(String Sql)的方法来创建一个原始的sql查询。</p>
 
       
 
