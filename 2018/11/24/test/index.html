@@ -6,20 +6,20 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>test | Nozomi&#39;s blog</title>
+  <title>equals与双等号(==)的区别 | Nozomi&#39;s blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="/**  * 测试String类里部分方法的用法 * @author 张攀 * */ public class testString {  public static void main(String[] args) {      String str1=&amp;quot;zhangpan&amp;quot;;     String str2=&amp;quot;zhangpan&amp;quot;;     String s">
+  <meta name="description" content="双等号(==):    是关系运算符,用来比较两个数据是否相等(关系运算符的运算结果一定是一个Boolean 值; 比较的是变量所带的内存地址是否一样。         equals:    用来比较两个对象是否“相等”,equals是Object类中提供的一个方法,这个方法的初始行为是比较对象的内存地址,但是在一些类库存里这个方法是被重写了的;如String,Integer。在这些类中,equa">
 <meta name="keywords" content="-随笔">
 <meta property="og:type" content="article">
-<meta property="og:title" content="test">
+<meta property="og:title" content="equals与双等号(==)的区别">
 <meta property="og:url" content="http://yoursite.com/2018/11/24/test/index.html">
 <meta property="og:site_name" content="Nozomi&#39;s blog">
-<meta property="og:description" content="/**  * 测试String类里部分方法的用法 * @author 张攀 * */ public class testString {  public static void main(String[] args) {      String str1=&amp;quot;zhangpan&amp;quot;;     String str2=&amp;quot;zhangpan&amp;quot;;     String s">
+<meta property="og:description" content="双等号(==):    是关系运算符,用来比较两个数据是否相等(关系运算符的运算结果一定是一个Boolean 值; 比较的是变量所带的内存地址是否一样。         equals:    用来比较两个对象是否“相等”,equals是Object类中提供的一个方法,这个方法的初始行为是比较对象的内存地址,但是在一些类库存里这个方法是被重写了的;如String,Integer。在这些类中,equa">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2018-11-24T04:15:41.735Z">
+<meta property="og:updated_time" content="2018-11-24T10:30:02.737Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="test">
-<meta name="twitter:description" content="/**  * 测试String类里部分方法的用法 * @author 张攀 * */ public class testString {  public static void main(String[] args) {      String str1=&amp;quot;zhangpan&amp;quot;;     String str2=&amp;quot;zhangpan&amp;quot;;     String s">
+<meta name="twitter:title" content="equals与双等号(==)的区别">
+<meta name="twitter:description" content="双等号(==):    是关系运算符,用来比较两个数据是否相等(关系运算符的运算结果一定是一个Boolean 值; 比较的是变量所带的内存地址是否一样。         equals:    用来比较两个对象是否“相等”,equals是Object类中提供的一个方法,这个方法的初始行为是比较对象的内存地址,但是在一些类库存里这个方法是被重写了的;如String,Integer。在这些类中,equa">
   
     <link rel="alternative" href="/atom.xml" title="Nozomi&#39;s blog" type="application/atom+xml">
   
@@ -158,7 +158,7 @@
         
   
     <h1 class="article-title" itemprop="name">
-      test
+      equals与双等号(==)的区别
     </h1>
   
 
@@ -171,33 +171,10 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <pre><code>/**
- * 测试String类里部分方法的用法
-* @author 张攀
-* */
-public class testString {
+        <pre><code>双等号(==):    是关系运算符,用来比较两个数据是否相等(关系运算符的运算结果一定是一个Boolean
+</code></pre><p>值; 比较的是变量所带的内存地址是否一样。<br>         equals:    用来比较两个对象是否“相等”,equals是Object类中提供的一个方法,这个方法的初始行为是<br>比较对象的内存地址,但是在一些类库存里这个方法是被重写了的;如String,Integer。在这些类中,equals有<br>它本身的实现,不再是比较在对内存中存放的地址。<br><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * 测试String类的equals</span></span><br><span class="line"><span class="comment">* <span class="doctag">@author</span></span></span><br><span class="line"><span class="comment">* */</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">testString</span> </span>&#123;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">	String str1=<span class="string">"violet"</span>;</span><br><span class="line">	String str2=<span class="string">"violet"</span>;</span><br><span class="line">	String str3=<span class="keyword">new</span> String(<span class="string">"violet"</span>);</span><br><span class="line"></span><br><span class="line">	System.out.println(str1 ==  str2);			<span class="comment">//true</span></span><br><span class="line">	System.out.println(str2 ==  str3);			<span class="comment">//false</span></span><br><span class="line">	System.out.println(str1.equals(str2));	<span class="comment">//true</span></span><br><span class="line">	System.out.println(str2.equals(str3));	<span class="comment">//true</span></span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p>  在str1=”violet”被创建时,Str1就被存放在常量池中。在创建str2时，程序找到了据有相同值的str1， 此时<br>str2引用str1所应用的对象”violet”.str3使用了new 新建了一个新的对象。所以str3与str2和str1的内存地址<br>不同，但str3所存放的内容与str1和str2相同。</p>
 
-public static void main(String[] args) { 
-    String str1=&quot;zhangpan&quot;;
-    String str2=&quot;zhangpan&quot;;
-    String str3=new String(&quot;zhangpan&quot;);
-    /**
-     * == 双等号用来判断是否为同一个对象
-     * str1与str2在创建时均在常量池中取值，所以为同一个对象
-     * str3使用了new关键字创了一个新的对象
-     * */
-    System.out.println(str1 ==  str2);            //true
-    System.out.println(str2 ==  str3);            //false
-    /**
-     * equals与双等号不同，从源码可以看出equals用来判断对象里的字符是否相等
-     * */
-    System.out.println(str1.equals(str2));
-    System.out.println(str2.equals(str3));
-
-    }
-
-}
-</code></pre><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * 测试String类里部分方法的用法</span></span><br><span class="line"><span class="comment">* <span class="doctag">@author</span> 张攀</span></span><br><span class="line"><span class="comment">* */</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">testString</span> </span>&#123;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123; </span><br><span class="line">	String str1=<span class="string">"zhangpan"</span>;</span><br><span class="line">	String str2=<span class="string">"zhangpan"</span>;</span><br><span class="line">	String str3=<span class="keyword">new</span> String(<span class="string">"zhangpan"</span>);</span><br><span class="line">	<span class="comment">/**</span></span><br><span class="line"><span class="comment">	 * == 双等号用来判断是否为同一个对象</span></span><br><span class="line"><span class="comment">	 * str1与str2在创建时均在常量池中取值，所以为同一个对象</span></span><br><span class="line"><span class="comment">	 * str3使用了new关键字创了一个新的对象</span></span><br><span class="line"><span class="comment">	 * */</span></span><br><span class="line">	System.out.println(str1 ==  str2);			<span class="comment">//true</span></span><br><span class="line">	System.out.println(str2 ==  str3);			<span class="comment">//false</span></span><br><span class="line">	<span class="comment">/**</span></span><br><span class="line"><span class="comment">	 * equals与双等号不同，从源码可以看出equals用来判断对象里的字符是否相等</span></span><br><span class="line"><span class="comment">	 * */</span></span><br><span class="line">	System.out.println(str1.equals(str2));</span><br><span class="line">	System.out.println(str2.equals(str3));</span><br><span class="line"></span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
       
 
       
@@ -408,15 +385,15 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
           <ul class="article-tag-list" q-show="showTags">
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">-java</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color2">-java -hibernate</a>
               </li>
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color4">-随笔</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">-java</a>
               </li>
             
             <div class="clearfix"></div>
