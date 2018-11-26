@@ -16,7 +16,7 @@
 <meta property="og:site_name" content="Nozomi&#39;s blog">
 <meta property="og:description" content="今天在看别人代码时看到了位移运算符，感觉自己对这些符号有点陌生，在网上看了下dalao们的理解，姑且自己整理归纳一下。1、 左移运算符　　左移运算符&amp;lt;&amp;lt;使指定值的所有位都左移规定的次数。　　1）它的通用格式如下所示：　　value &amp;lt;&amp;lt; num　　num 指定要移位值value 移动的位数。　　左移的规则只记住一点：丢弃最高位，0补最低位　　如果移动的位数超过了该类型的最大">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2018-11-25T04:36:56.991Z">
+<meta property="og:updated_time" content="2018-11-26T11:02:11.856Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="java位移运算符:&lt;&lt;(左移)，&gt;&gt;(带符号右移)和&gt;&gt;&gt;(无符号右移)">
 <meta name="twitter:description" content="今天在看别人代码时看到了位移运算符，感觉自己对这些符号有点陌生，在网上看了下dalao们的理解，姑且自己整理归纳一下。1、 左移运算符　　左移运算符&amp;lt;&amp;lt;使指定值的所有位都左移规定的次数。　　1）它的通用格式如下所示：　　value &amp;lt;&amp;lt; num　　num 指定要移位值value 移动的位数。　　左移的规则只记住一点：丢弃最高位，0补最低位　　如果移动的位数超过了该类型的最大">
@@ -151,7 +151,7 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="w-java位移运算符" class="article article-type-w " itemscope itemprop="blogPost">
+            <article id="post-java位移运算符" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
@@ -171,7 +171,7 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>今天在看别人代码时看到了位移运算符，感觉自己对这些符号有点陌生，在网上看了下dalao们的理解，姑且自己整理归纳一下。<br>1、 左移运算符<br>　　左移运算符&lt;&lt;使指定值的所有位都左移规定的次数。<br>　　1）它的通用格式如下所示：<br>　　value &lt;&lt; num<br>　　num 指定要移位值value 移动的位数。<br>　　左移的规则只记住一点：丢弃最高位，0补最低位<br>　　如果移动的位数超过了该类型的最大位数，那么编译器会对移动的位数取模。如对int型移动37位，实际上只移动了37对32求余位。<br>　　2）运算规则<br>　　按二进制形式把所有的数字向左移动对应的位数，高位移出(舍弃)，低位的空位补零。<br>　　当左移的运算数是int 类型时，每移动1位它的第31位就要被移出并且丢弃；<br>　　当左移的运算数是long 类型时，每移动1位它的第63位就要被移出并且丢弃。<br>　　当左移的运算数是byte 和short类型时，将自动把这些类型扩大为 int 型。<br>2、 右移运算符<br>    右移运算符&lt;&lt;使指定值的所有位都右移规定的次数。<br>　　1）它的通用格式如下所示：<br>　　value &gt;&gt; num<br>　　num 指定要移位值value 移动的位数。<br>　　右移的规则只记住一点：符号位不变，左边补上符号位<br>　　2）运算规则：<br>　　按二进制形式把所有的数字向右移动对应的位数，低位移出(舍弃)，高位的空位补符号位，即正数补零，负数补1<br>　　当右移的运算数是byte 和short类型时，将自动把这些类型扩大为 int 型。<br>　　例如，如果要移走的值为负数，每一次右移都在左边补1，如果要移走的值为正数，每一次右移都在左边补0，这叫做符号位扩展（保留符号位）（sign extension ），在进行右移<br>　　操作时用来保持负数的符号。　<br>3、无符号右移<br>　　无符号右移运算符&gt;&gt;&gt;<br>　　它的通用格式如下所示：<br>　　value &gt;&gt;&gt; num<br>　　num 指定要移位值value 移动的位数。<br>　　无符号右移的规则只记住一点：忽略了符号位扩展，0补最高位<br>　 无符号右移规则和右移运算是一样的，只是填充时不管左边的数字是正是负都用0来填充，无符号右移运算只针对负数计算，因为对于正数来说这种运算没有意义<br>　无符号右移运算符&gt;&gt;&gt; 只是对32位和64位的值有意义</p>
+        <p>今天在看别人代码时看到了位移运算符，感觉自己对这些符号有点陌生，在网上看了下dalao们的理解，姑且自己整理归纳一下。<br>1、 左移运算符<br>　　左移运算符&lt;&lt;使指定值的所有位都左移规定的次数。<br>　　1）它的通用格式如下所示：<br>　　value &lt;&lt; num<br>　　num 指定要移位值value 移动的位数。<br>　　左移的规则只记住一点：丢弃最高位，0补最低位<br>　　如果移动的位数超过了该类型的最大位数，那么编译器会对移动的位数取模。如对int型移动37位，实际上只移动了37对32求余5位。<br>　　2）运算规则<br>　　按二进制形式把所有的数字向左移动对应的位数，高位移出(舍弃)，低位的空位补零。<br>　　当左移的运算数是int 类型时，每移动1位它的第31位就要被移出并且丢弃；<br>　　当左移的运算数是long 类型时，每移动1位它的第63位就要被移出并且丢弃。<br>　　当左移的运算数是byte 和short类型时，将自动把这些类型扩大为 int 型。<br>2、 右移运算符<br>    右移运算符&lt;&lt;使指定值的所有位都右移规定的次数。<br>　　1）它的通用格式如下所示：<br>　　value &gt;&gt; num<br>　　num 指定要移位值value 移动的位数。<br>　　右移的规则只记住一点：符号位不变，左边补上符号位<br>　　2）运算规则：<br>　　按二进制形式把所有的数字向右移动对应的位数，低位移出(舍弃)，高位的空位补符号位，即正数补零，负数补1<br>　　当右移的运算数是byte 和short类型时，将自动把这些类型扩大为 int 型。<br>　　例如，如果要移走的值为负数，每一次右移都在左边补1，如果要移走的值为正数，每一次右移都在左边补0，这叫做符号位扩展（保留符号位）（sign extension ），在进行右移<br>　　操作时用来保持负数的符号。　<br>3、无符号右移<br>　　无符号右移运算符&gt;&gt;&gt;<br>　　它的通用格式如下所示：<br>　　value &gt;&gt;&gt; num<br>　　num 指定要移位值value 移动的位数。<br>　　无符号右移的规则只记住一点：忽略了符号位扩展，0补最高位<br>　 无符号右移规则和右移运算是一样的，只是填充时不管左边的数字是正是负都用0来填充，无符号右移运算只针对负数计算，因为对于正数来说这种运算没有意义<br>　无符号右移运算符&gt;&gt;&gt; 只是对32位和64位的值有意义</p>
 
       
 
@@ -391,11 +391,11 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">-java</a>
+                <a href="javascript:void(0)" class="js-tag color5">-随笔 -java</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">-随笔 -java</a>
+                <a href="javascript:void(0)" class="js-tag color1">-java</a>
               </li>
             
             <div class="clearfix"></div>
