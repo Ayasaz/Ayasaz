@@ -16,7 +16,7 @@
 <meta property="og:site_name" content="Nozomi&#39;s blog">
 <meta property="og:description" content="12### Error updating database.  Cause: java.lang.IllegalArgumentException: Mapped Statements collection does not contain value for ????????### Cause: java.lang.IllegalArgumentException: Mapped Stateme">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2018-12-11T08:19:40.459Z">
+<meta property="og:updated_time" content="2018-12-12T03:59:04.965Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="MyBatis常见错误持续更新">
 <meta name="twitter:description" content="12### Error updating database.  Cause: java.lang.IllegalArgumentException: Mapped Statements collection does not contain value for ????????### Cause: java.lang.IllegalArgumentException: Mapped Stateme">
@@ -169,6 +169,8 @@
       
         <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">### Error updating database.  Cause: java.lang.IllegalArgumentException: Mapped Statements collection does not contain value for ????????</span><br><span class="line">### Cause: java.lang.IllegalArgumentException: Mapped Statements collection does not contain value for ??????</span><br></pre></td></tr></table></figure>
 <p>错误原因:通常是没有在mybatis.tld中配置<mapper resource="????"></mapper> 配置好即可解决</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">Exception in thread &quot;main&quot; org.apache.ibatis.binding.BindingException: Type interface ????? is not known to the MapperRegistry.</span><br><span class="line">	at org.apache.ibatis.binding.MapperRegistry.getMapper(MapperRegistry.java:47)</span><br><span class="line">	at org.apache.ibatis.session.Configuration.getMapper(Configuration.java:655)</span><br><span class="line">	at org.apache.ibatis.session.defaults.DefaultSqlSession.getMapper(DefaultSqlSession.java:222)</span><br></pre></td></tr></table></figure>
+<p>使用getMapper绑定接口时没有在mybatis.tld中配置mappers下package(package为mapper和接口所在的包)</p>
 
       
 
@@ -251,6 +253,15 @@
 
   
 <nav id="article-nav">
+  
+    <a href="/2018/12/16/linux下安装Shadowsocks/" id="article-nav-newer" class="article-nav-link-wrap">
+      <i class="icon-circle-left"></i>
+      <div class="article-nav-title">
+        
+          linux下安装Shadowsocks
+        
+      </div>
+    </a>
   
   
     <a href="/2018/12/09/2018-12-9/" id="article-nav-older" class="article-nav-link-wrap">
@@ -388,11 +399,11 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">-java</a>
+                <a href="javascript:void(0)" class="js-tag color5">-随笔 -java</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">-随笔 -java</a>
+                <a href="javascript:void(0)" class="js-tag color1">-java</a>
               </li>
              
               <li class="article-tag-list-item">

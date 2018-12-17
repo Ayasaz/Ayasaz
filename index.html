@@ -144,6 +144,83 @@
           <div id="js-content" class="content-ll">
             
   
+    <article id="post-linux下安装Shadowsocks" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2018/12/16/linux下安装Shadowsocks/">linux下安装Shadowsocks</a>
+    </h1>
+  
+
+        
+        <a href="/2018/12/16/linux下安装Shadowsocks/" class="archive-article-date">
+  	<time datetime="2018-12-16T15:32:12.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-12-16</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>首先,下载安装文件<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">wget --no-check-certificate https://raw.githubusercontent.com/teddysun/shadowsocks_install/master/shadowsocks.sh</span><br></pre></td></tr></table></figure></p>
+<p>然后更改文件的执行权限<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">chmod +x shadowsocks.sh</span><br></pre></td></tr></table></figure></p>
+<p>最后执行以下命令，将标准错误和标准输出记录到日志中<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">./shadowsocks.sh 2&gt;&amp;1 | tee shadowsocks.log</span><br></pre></td></tr></table></figure></p>
+<p>中间会要求输入密码，端口，和加密方式。加密方式因为一般选用aes-256-cfb。<br>最后完成后shadowsocks会把这些信息打印出来。</p>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">-随笔</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2018/12/16/linux下安装Shadowsocks/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
     <article id="post-MyBatis常见错误持续更新" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
@@ -166,6 +243,8 @@
       
         <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">### Error updating database.  Cause: java.lang.IllegalArgumentException: Mapped Statements collection does not contain value for ????????</span><br><span class="line">### Cause: java.lang.IllegalArgumentException: Mapped Statements collection does not contain value for ??????</span><br></pre></td></tr></table></figure>
 <p>错误原因:通常是没有在mybatis.tld中配置<mapper resource="????"></mapper> 配置好即可解决</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">Exception in thread &quot;main&quot; org.apache.ibatis.binding.BindingException: Type interface ????? is not known to the MapperRegistry.</span><br><span class="line">	at org.apache.ibatis.binding.MapperRegistry.getMapper(MapperRegistry.java:47)</span><br><span class="line">	at org.apache.ibatis.session.Configuration.getMapper(Configuration.java:655)</span><br><span class="line">	at org.apache.ibatis.session.defaults.DefaultSqlSession.getMapper(DefaultSqlSession.java:222)</span><br></pre></td></tr></table></figure>
+<p>使用getMapper绑定接口时没有在mybatis.tld中配置mappers下package(package为mapper和接口所在的包)</p>
 
       
 
@@ -852,11 +931,11 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">-java</a>
+                <a href="javascript:void(0)" class="js-tag color5">-随笔 -java</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">-随笔 -java</a>
+                <a href="javascript:void(0)" class="js-tag color1">-java</a>
               </li>
              
               <li class="article-tag-list-item">
