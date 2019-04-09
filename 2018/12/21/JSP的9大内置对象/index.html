@@ -16,7 +16,7 @@
 <meta property="og:site_name" content="Nozomi&#39;s blog">
 <meta property="og:description" content="####1.9大内置对象    名称 类型 作用 获取方法     request HttpServletRequest 封装所有请求信息 方法参数   response HttpSevletResponse 封装所有响应信息 方法参数   session HttpSession 封装所有会话信息 req.getSession()   application ServletContext 所有信息">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2019-04-09T12:24:47.291Z">
+<meta property="og:updated_time" content="2019-04-09T12:30:54.207Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="JSP的9大内置对象和四大作用域">
 <meta name="twitter:description" content="####1.9大内置对象    名称 类型 作用 获取方法     request HttpServletRequest 封装所有请求信息 方法参数   response HttpSevletResponse 封装所有响应信息 方法参数   session HttpSession 封装所有会话信息 req.getSession()   application ServletContext 所有信息">
@@ -237,10 +237,28 @@
 <blockquote>
 <p>2.1 page</p>
 <blockquote>
-<p>2.1.1 在当前页面不会重新实例化.<br>2.2request<br>2.2.1 在一次请求中同一个对象,下次请求重新实例化一个<br>2.3session<br>2.3.1 一次会话.<br>2.3.2 只要客户端Cookie中传递的Jsessionid不变,Session不会重新实力会(不超过默认时间.)<br>2.3.3 实际有效时间:</p>
-<blockquote>
-<p>2.3.3.1 浏览器关闭.Cookie 失效.<br>2.3.3.2 默认时间.在时间范围内无任何交互.在 tomcat 的web.xml 中配置<br><code>&lt;session-config&gt; &lt;session-timeout&gt;30&lt;/session-timeout&gt; &lt;/session-config&gt;</code><br>2.4application<br>2.4.1 只有在 tomcat 启动项目时菜实例化.关闭 tomcat 时销毁application</p>
+<p>2.1.1 在当前页面不会重新实例化.</p>
 </blockquote>
+</blockquote>
+<blockquote>
+<p>2.2request</p>
+<blockquote>
+<p>2.2.1 在一次请求中同一个对象,下次请求重新实例化一个</p>
+</blockquote>
+</blockquote>
+<blockquote>
+<p>2.3session</p>
+<blockquote>
+<p>2.3.1 一次会话.<br>2.3.2 只要客户端Cookie中传递的Jsessionid不变,Session不会重新实力会(不超过默认时间.)<br>2.3.3 实际有效时间:</p>
+<blockquote>
+<p>2.3.3.1 浏览器关闭.Cookie 失效.<br>2.3.3.2 默认时间.在时间范围内无任何交互.在 tomcat 的web.xml 中配置<br><code>&lt;session-config&gt; &lt;session-timeout&gt;30&lt;/session-timeout&gt; &lt;/session-config&gt;</code></p>
+</blockquote>
+</blockquote>
+</blockquote>
+<blockquote>
+<p>2.4application</p>
+<blockquote>
+<p>2.4.1 只有在 tomcat 启动项目时菜实例化.关闭 tomcat 时销毁application</p>
 </blockquote>
 </blockquote>
 
