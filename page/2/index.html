@@ -144,6 +144,86 @@
           <div id="js-content" class="content-ll">
             
   
+    <article id="post-Hibernate学习笔记" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2018/09/18/Hibernate学习笔记/">Hibernate学习笔记</a>
+    </h1>
+  
+
+        
+        <a href="/2018/09/18/Hibernate学习笔记/" class="archive-article-date">
+  	<time datetime="2018-09-18T13:37:21.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-09-18</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>Hibernate持久化类的主要规则，然而，在这些规则中，没有一条是硬性要求</p>
+<p>所有将被持久化的 Java 类都需要一个默认的构造函数。</p>
+<p>为了使对象能够在 Hibernate 和数据库中容易识别，所有类都需要包含一个 ID。此属性映射到数据库表的主键列。<br>所有将被持久化的属性都应该声明为 private，并具有由 JavaBean 风格定义的 getXXX 和 setXXX 方法。</p>
+<p>Hibernate 的一个重要特征为代理，它取决于该持久化类是处于非 final 的，还是处于一个所有方法都声明为 public 的接口。</p>
+<p>所有的类是不可扩展或按 EJB 要求实现的一些特殊的类和接口。</p>
+<p>Hibernate属性:<br>1,hibernate.dialect  这个属性使 Hibernate 应用为被选择的数据库生成适当的 SQL。<br>2,hibernate.connection<br>    1).hibernate.connection.driver_class JDBC 驱动程序类。<br>    2).hibernate.connection.url 数据库实例的 JDBC URL。<br>    3).hibernate.connection.pool_size 限制在 Hibernate 应用数据库连接池中连接的数量<br>    4).hibernate.connection.autocommit 允许在 JDBC 连接中使用自动提交模式。</p>
+<p>Hibernate 查询语言<br>      Hibernate 查询语言（HQL）是一种面向对象的查询语言，类似于 SQL，但不是去对表和列进行操作，而是面向对象和它们的属性。<br>    HQL 查询被 Hibernate 翻译为传统的 SQL 查询从而对数据库进行操作。<br>      尽管你能直接使用本地 SQL 语句，但我还是建议你尽可能的使用 HQL 语句，以避免数据库关于可移植性的麻烦，并且体现了 Hibernate 的 SQL 生成和缓存策略。<br>    在 HQL 中一些关键字比如 SELECT ，FROM 和 WHERE 等，是不区分大小写的，但是一些属性比如表名和列名是区分大小写的。<br> *可以使用cerateSQLQuery(String Sql)的方法来创建一个原始的sql查询。</p>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">-java -hibernate</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2018/09/18/Hibernate学习笔记/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
     <article id="n-hello-world" class="article article-type-n  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
@@ -319,11 +399,11 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">-java -hibernate</a>
+                <a href="javascript:void(0)" class="js-tag color4">-随笔</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">-随笔</a>
+                <a href="javascript:void(0)" class="js-tag color2">-java -hibernate</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -331,11 +411,15 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">-java</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">-随笔 -java</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">-java</a>
+                <a href="javascript:void(0)" class="js-tag color5">java</a>
               </li>
              
               <li class="article-tag-list-item">
