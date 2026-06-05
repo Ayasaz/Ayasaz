@@ -18,23 +18,25 @@
 
 ---
 
-### 📊 GitHub Stats
-
-<p align="center">
-  <img height="160" src="https://github-readme-stats.vercel.app/api?username=Ayasaz&show_icons=true&theme=graywhite&hide_title=true&hide_border=true" />
-  <img height="160" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Ayasaz&layout=compact&theme=graywhite&hide_border=true&langs_count=6" />
-</p>
-
----
-
 ### 🏆 GitHub Achievements
 
-[![Pull Shark](https://img.shields.io/badge/-🦈%20Pull%20Shark-brightgreen?style=flat-square)]()
-[![Quickdraw](https://img.shields.io/badge/-🏃%20Quickdraw-blue?style=flat-square)]()
-[![YOLO](https://img.shields.io/badge/-🚀%20YOLO-red?style=flat-square)]()
+| 🦈 Pull Shark | 🏃 Quickdraw | 🚀 YOLO |
+|:---:|:---:|:---:|
+| 2+ merged PRs | Close in 5 min | Merge without review |
+
+---
+
+### 📂 Open Source Contributions
+
+| Project | PR | Status |
+|---------|-----|--------|
+| **Apache Dubbo** (40k⭐) | Fix NetUtils IPv4 port parsing | 🔄 Open |
+| **PrestoDB** (16k⭐) | Add config doc for optimize-top-n-rank | 🔄 Open |
+| **JabRef** (3k⭐) | Auto-detection import for drag-and-drop | 🔄 Open |
+| **Checkstyle** (8k⭐) | Remove violationBetweenAnnotationAndMethod suppression | ✅ Merged |
 
 ---
 
 <p align="center">
-  <img src="https://komarev.com/ghpvc/?username=Ayasaz&style=flat-square&color=blue" alt="profile views" />
+  <sub>📫 How to reach me: <a href="https://github.com/Ayasaz">GitHub</a></sub>
 </p>
