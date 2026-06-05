@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="660" height="140" viewBox="0 0 660 140">
+  <defs>
+    <linearGradient id="bd" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#6a0dad"/>
+      <stop offset="100%" stop-color="#39ff14"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="660" height="140" rx="6" fill="#0a0a0a"/>
+  <rect x="0" y="0" width="660" height="3" fill="url(#bd)"/>
+
+  <text x="330" y="30" text-anchor="middle" fill="#ff6b00" font-family="monospace" font-size="14" font-weight="bold">NERV 勋章 / FIELD COMMENDATIONS</text>
+
+  <!-- Medal 1: Pull Shark -->
+  <rect x="30" y="50" width="180" height="75" rx="6" fill="#151515"/>
+  <rect x="30" y="50" width="180" height="3" rx="0" fill="#6a0dad"/>
+  <text x="120" y="80" text-anchor="middle" fill="#ffffff" font-size="22">🦈</text>
+  <text x="120" y="100" text-anchor="middle" fill="#ffffff" font-family="monospace" font-size="12" font-weight="bold">PULL SHARK</text>
+  <text x="120" y="117" text-anchor="middle" fill="#555" font-family="monospace" font-size="10">2+ MERGED OPS</text>
+
+  <!-- Medal 2: Quickdraw -->
+  <rect x="240" y="50" width="180" height="75" rx="6" fill="#151515"/>
+  <rect x="240" y="50" width="180" height="3" rx="0" fill="#39ff14"/>
+  <text x="330" y="80" text-anchor="middle" fill="#ffffff" font-size="22">🏃</text>
+  <text x="330" y="100" text-anchor="middle" fill="#ffffff" font-family="monospace" font-size="12" font-weight="bold">QUICKDRAW</text>
+  <text x="330" y="117" text-anchor="middle" fill="#555" font-family="monospace" font-size="10">&lt; 5 MIN KILL</text>
+
+  <!-- Medal 3: YOLO -->
+  <rect x="450" y="50" width="180" height="75" rx="6" fill="#151515"/>
+  <rect x="450" y="50" width="180" height="3" rx="0" fill="#ff6b00"/>
+  <text x="540" y="80" text-anchor="middle" fill="#ffffff" font-size="22">🚀</text>
+  <text x="540" y="100" text-anchor="middle" fill="#ffffff" font-family="monospace" font-size="12" font-weight="bold">YOLO</text>
+  <text x="540" y="117" text-anchor="middle" fill="#555" font-family="monospace" font-size="10">NO-REVIEW STRIKE</text>
+
+  <rect x="0" y="137" width="660" height="3" fill="url(#bd)"/>
+</svg>

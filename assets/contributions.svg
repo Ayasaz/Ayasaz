@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="260" viewBox="0 0 800 260">
+  <defs>
+    <linearGradient id="hdr" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#6a0dad"/>
+      <stop offset="100%" stop-color="#39ff14"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="800" height="260" rx="6" fill="#0a0a0a"/>
+  <rect x="0" y="0" width="800" height="3" fill="url(#hdr)"/>
+
+  <text x="400" y="32" text-anchor="middle" fill="#ff6b00" font-family="monospace" font-size="14" font-weight="bold">A.T. FIELD 突破记录 — 开源贡献作战日志</text>
+
+  <!-- header row -->
+  <rect x="20" y="46" width="760" height="28" rx="3" fill="#151515"/>
+  <text x="180" y="65" text-anchor="middle" fill="#6a0dad" font-family="monospace" font-size="11" font-weight="bold">TARGET</text>
+  <text x="480" y="65" text-anchor="middle" fill="#6a0dad" font-family="monospace" font-size="11" font-weight="bold">PAYLOAD</text>
+  <text x="720" y="65" text-anchor="middle" fill="#6a0dad" font-family="monospace" font-size="11" font-weight="bold">STATUS</text>
+
+  <!-- row 1 -->
+  <circle cx="40" cy="100" r="6" fill="#6a0dad"/>
+  <text x="60" y="105" fill="#ffffff" font-family="monospace" font-size="13" font-weight="bold">Apache Dubbo</text>
+  <text x="210" y="105" fill="#555" font-family="monospace" font-size="11">40k⭐</text>
+  <text x="320" y="105" fill="#c9c9c9" font-family="monospace" font-size="12">Fix NetUtils IPv4 port parsing</text>
+  <rect x="680" y="88" width="80" height="22" rx="11" fill="#1a1a3a"/>
+  <text x="720" y="103" text-anchor="middle" fill="#ff6b00" font-family="monospace" font-size="10" font-weight="bold">SYNCING</text>
+
+  <line x1="30" y1="120" x2="770" y2="120" stroke="#1a1a1a" stroke-width="1"/>
+
+  <!-- row 2 -->
+  <circle cx="40" cy="145" r="6" fill="#39ff14"/>
+  <text x="60" y="150" fill="#ffffff" font-family="monospace" font-size="13" font-weight="bold">PrestoDB</text>
+  <text x="210" y="150" fill="#555" font-family="monospace" font-size="11">16k⭐</text>
+  <text x="320" y="150" fill="#c9c9c9" font-family="monospace" font-size="12">Add config doc for optimize-top-n-rank</text>
+  <rect x="680" y="133" width="80" height="22" rx="11" fill="#1a1a3a"/>
+  <text x="720" y="148" text-anchor="middle" fill="#ff6b00" font-family="monospace" font-size="10" font-weight="bold">SYNCING</text>
+
+  <line x1="30" y1="165" x2="770" y2="165" stroke="#1a1a1a" stroke-width="1"/>
+
+  <!-- row 3 -->
+  <circle cx="40" cy="190" r="6" fill="#ff6b00"/>
+  <text x="60" y="195" fill="#ffffff" font-family="monospace" font-size="13" font-weight="bold">JabRef</text>
+  <text x="210" y="195" fill="#555" font-family="monospace" font-size="11">3k⭐</text>
+  <text x="320" y="195" fill="#c9c9c9" font-family="monospace" font-size="12">Auto-detection import for drag-and-drop</text>
+  <rect x="680" y="178" width="80" height="22" rx="11" fill="#1a1a3a"/>
+  <text x="720" y="193" text-anchor="middle" fill="#ff6b00" font-family="monospace" font-size="10" font-weight="bold">SYNCING</text>
+
+  <line x1="30" y1="210" x2="770" y2="210" stroke="#1a1a1a" stroke-width="1"/>
+
+  <!-- row 4 -->
+  <circle cx="40" cy="235" r="6" fill="#c9c9c9"/>
+  <text x="60" y="240" fill="#ffffff" font-family="monospace" font-size="13" font-weight="bold">Checkstyle</text>
+  <text x="210" y="240" fill="#555" font-family="monospace" font-size="11">8k⭐</text>
+  <text x="320" y="240" fill="#c9c9c9" font-family="monospace" font-size="12">Remove violationBetweenAnnotationAndMethod</text>
+  <rect x="680" y="223" width="80" height="22" rx="11" fill="#0a2a0a"/>
+  <text x="720" y="238" text-anchor="middle" fill="#39ff14" font-family="monospace" font-size="10" font-weight="bold">CLEAR</text>
+
+  <rect x="0" y="257" width="800" height="3" fill="url(#hdr)"/>
+</svg>

@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="210" viewBox="0 0 800 210">
+  <defs>
+    <linearGradient id="border" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#6a0dad"/>
+      <stop offset="100%" stop-color="#39ff14"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="800" height="210" rx="6" fill="#0a0a0a"/>
+  <rect x="0" y="0" width="800" height="3" fill="url(#border)"/>
+  <rect x="0" y="207" width="800" height="3" fill="url(#border)"/>
+
+  <text x="400" y="35" text-anchor="middle" fill="#ff6b00" font-family="monospace" font-size="14" font-weight="bold">▌ NERV PERSONNEL FILE ▌</text>
+
+  <line x1="40" y1="50" x2="760" y2="50" stroke="#333" stroke-width="1"/>
+
+  <text x="60" y="80" fill="#6a0dad" font-family="monospace" font-size="12">CODE NAME</text>
+  <text x="200" y="80" fill="#39ff14" font-family="monospace" font-size="14" font-weight="bold">AYASAZ</text>
+
+  <text x="440" y="80" fill="#6a0dad" font-family="monospace" font-size="12">ASSIGNMENT</text>
+  <text x="580" y="80" fill="#c9c9c9" font-family="monospace" font-size="14">Java 后端开发</text>
+
+  <line x1="40" y1="95" x2="760" y2="95" stroke="#1a1a1a" stroke-width="1"/>
+
+  <text x="60" y="125" fill="#6a0dad" font-family="monospace" font-size="12">AFFILIATION</text>
+  <text x="200" y="125" fill="#c9c9c9" font-family="monospace" font-size="14">开源舰队 (Open Source Fleet)</text>
+
+  <text x="440" y="125" fill="#6a0dad" font-family="monospace" font-size="12">DIRECTIVE</text>
+  <text x="580" y="125" fill="#c9c9c9" font-family="monospace" font-size="14">持续学习 · 持续部署</text>
+
+  <line x1="40" y1="140" x2="760" y2="140" stroke="#1a1a1a" stroke-width="1"/>
+
+  <text x="60" y="172" fill="#6a0dad" font-family="monospace" font-size="12">THREAT LEVEL</text>
+
+  <rect x="200" y="158" width="22" height="18" rx="2" fill="#6a0dad"/>
+  <rect x="226" y="158" width="22" height="18" rx="2" fill="#6a0dad"/>
+  <rect x="252" y="158" width="22" height="18" rx="2" fill="#6a0dad"/>
+  <rect x="278" y="158" width="22" height="18" rx="2" fill="#6a0dad"/>
+  <rect x="304" y="158" width="22" height="18" rx="2" fill="#6a0dad"/>
+  <rect x="330" y="158" width="22" height="18" rx="2" fill="#6a0dad"/>
+  <rect x="356" y="158" width="22" height="18" rx="2" fill="#6a0dad"/>
+  <rect x="382" y="158" width="22" height="18" rx="2" fill="#6a0dad"/>
+  <rect x="408" y="158" width="22" height="18" rx="2" fill="#222"/>
+  <rect x="434" y="158" width="22" height="18" rx="2" fill="#222"/>
+
+  <text x="480" y="172" fill="#ff6b00" font-family="monospace" font-size="13" font-weight="bold">使徒级 APOSTLE-CLASS</text>
+
+  <rect x="0" y="195" width="800" height="15" rx="0" fill="#0a0a0a"/>
+  <text x="400" y="205" text-anchor="middle" fill="#333" font-family="monospace" font-size="9">NERV // CENTRAL DOGMA // CLASSIFIED</text>
+</svg>

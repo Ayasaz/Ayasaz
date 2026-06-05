@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="159.36865234375" height="28" role="img" aria-label="NERV ACCESS LOG: 1">
+	<title>NERV ACCESS LOG: 1</title>
+	<g shape-rendering="crispEdges">
+		<rect width="131.201171875" height="28" fill="#555"/>
+		<rect x="131.201171875" width="28.16748046875" height="28" fill="#6a0dad"/>
+	</g>
+	<g fill="#fff" text-anchor="middle" text-rendering="geometricPrecision" font-family="Verdana,Geneva,DejaVu Sans,sans-serif" font-size="10" letter-spacing="1.1">
+		<text x="66.6" y="17.5" fill="#fff">NERV ACCESS LOG</text>
+		<text x="144.301171875" y="17.5" fill="#fff" font-weight="bold">1</text>
+	</g>
+</svg>
